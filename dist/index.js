@@ -350,5 +350,5 @@ var callSiteToString=__webpack_require__(47).callSiteToString,eventListenerCount
  * Copyright(c) 2013 Roman Shtylman
  * Copyright(c) 2014-2015 Douglas Christopher Wilson
  * MIT Licensed
- */e.exports=n(127)},function(e,a,n){"use strict";var i=o(n(128)),t=o(n(54));function o(e){return e&&e.__esModule?e:{default:e}}var r=(0,i.default)();r.use(i.default.static("client")),r.get("/",function(e,a){a.sendFile("/client/index.html",{root:"."})}),r.get("/data",function(e,a){a.json((0,t.default)({name:"{{string,5}}",age:"{{int,20,30}}"},30))}),r.listen(3e3,function(){console.log("Example app listening on port 3000!")})}]);
+ */e.exports=n(127)},function(e,a,n){"use strict";var i=o(n(128)),t=o(n(54));function o(e){return e&&e.__esModule?e:{default:e}}var r=(0,i.default)();r.use(i.default.static("public")),r.get("/",function(e,a){a.sendFile("/public/index.html",{root:"."})}),r.get("/data",function(e,a){a.json((0,t.default)({name:"{{string,5}}",age:"{{int,20,30}}"},30))}),r.listen(3e3,function(){console.log("listening on port 3000!")})}]);
 //# sourceMappingURL=index.js.map

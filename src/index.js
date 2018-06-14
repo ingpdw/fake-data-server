@@ -3,10 +3,10 @@ import setFakeData from './setFakeData';
 
 const app = express();
 
-app.use(express.static( 'client' ));
+app.use(express.static( 'public' ));
 
 app.get('/', function(req, res) {
-  res.sendFile('/client/index.html', { root: '.' })
+  res.sendFile('/public/index.html', { root: '.' })
 });
 
 app.get('/data', function (req, res) {
@@ -20,5 +20,5 @@ app.get('/data', function (req, res) {
 });
 
 app.listen(3000, function () {
-  console.log('Example app listening on port 3000!');
+  console.log('listening on port 3000!');
 });
